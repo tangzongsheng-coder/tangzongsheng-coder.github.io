@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>java面试题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="java面试题总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java面试题">
+<meta property="og:url" content="http://yoursite.com/2020/03/22/java%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="java面试题总结">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-22T10:10:24.000Z">
+<meta property="article:modified_time" content="2020-03-22T10:11:28.281Z">
 <meta property="article:author" content="唐宗胜要好好敲代码">
 <meta name="twitter:card" content="summary">
   
@@ -153,130 +157,625 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-java面试题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      java面试题
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/22/java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
+
+		
+		<!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+  
+        
+        <a href="/2020/03/22/java%E9%9D%A2%E8%AF%95%E9%A2%98/" class="archive-article-date">
   	<time datetime="2020-03-22T10:10:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/java%E9%9D%A2%E8%AF%95%E9%A2%98/">java面试题</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="java面试题总结"><a href="#java面试题总结" class="headerlink" title="java面试题总结"></a>java面试题总结</h2><a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
-          
+<h2 id="1-简单说一下java的跨平台原理"><a href="#1-简单说一下java的跨平台原理" class="headerlink" title="1.简单说一下java的跨平台原理"></a>1.简单说一下java的跨平台原理</h2><p>java通过不同的系统，不同的版本，不同位数的java虚拟机（jvm）来屏蔽不同的系统指令集差异，对外提供统一的接口（java api），对于我们普通的java开发者而言，只需要按照接口开发即可。如果系统需要部署到不/——–/-的环境时，只需要安装对应的java虚拟机即可。</p>
+<h2 id="2-JVM、JRE、JDK区别总结："><a href="#2-JVM、JRE、JDK区别总结：" class="headerlink" title="2.JVM、JRE、JDK区别总结："></a>2.JVM、JRE、JDK区别总结：</h2><pre><code>Java虚拟机是一个可以执行Java字节码的虚拟机进程 </code></pre><p>​         JRE = 运行Java应用程序的JVM +库。</p>
+<p>​         JDK = JRE +开发Java应用程序的工具</p>
+<h2 id="3-搭建一个java开发环境"><a href="#3-搭建一个java开发环境" class="headerlink" title="3.搭建一个java开发环境"></a>3.搭建一个java开发环境</h2><p>​    1.适用于我们开发环境的jdk（java开发工具包）安装后要配置JAVA_HOME环境变量</p>
+<p>​    2.idea</p>
+<p>​    3.web服务器（tomcat）</p>
+<h2 id="4-java中的基本数据类型有几种，大小"><a href="#4-java中的基本数据类型有几种，大小" class="headerlink" title="4.java中的基本数据类型有几种，大小"></a>4.java中的基本数据类型有几种，大小</h2><p>byte    1字节</p>
+<p>short    2字节</p>
+<p>int        4字节</p>
+<p>long     8字节</p>
+<p>float    4字节</p>
+<p>double 8字节</p>
+<p>boolean 1位</p>
+<p>char     2字节</p>
+<h2 id="5-抽象类和接口的区别"><a href="#5-抽象类和接口的区别" class="headerlink" title="5.抽象类和接口的区别:"></a>5.抽象类和接口的区别:</h2><p>● 相同点: </p>
+<ol>
+<li><p>接口和抽象类都能定义方法和属性。 </p>
+</li>
+<li><p>抽象类和接口都不能创建对象。 </p>
+</li>
+<li><p>接口和抽象类都是看作是一种特殊的类。大部分的时候，定义的方法要子类来实现 </p>
+</li>
+</ol>
+<p>● 不同点:</p>
+<ol>
+<li><p>接口能够多实现，而抽象类只能单独被继承 </p>
+<ol start="2">
+<li>抽象类的方法可以有抽象方法，也可以普通方法。而接口在老版本的jdk中，只能有抽象方法，但是Java8版本的接口中，接口可以带有默认方法。 </li>
+<li>方法上，抽象类的方法可以用各种各样的修饰符。而接口默认为public abstract 修饰。</li>
+<li>属性上，抽象类可以用各种各样的修饰符修饰符。而接口的属性是默认的public static final  </li>
+</ol>
+</li>
+</ol>
+<h2 id="6-面向对象的特征有哪些方面"><a href="#6-面向对象的特征有哪些方面" class="headerlink" title="6.面向对象的特征有哪些方面"></a>6.面向对象的特征有哪些方面</h2><p>有四大基本特征：封装，抽象，继承，多态</p>
+<p>封装：将事务的属性和行为包装到一个对象中，这个对象只对外公布需要公开的属性和行为，java中提供三种修饰符或默认来对外部对象访问该对象的属性和行为进行限制 举例：张三这个人，他有姓名等属性，private String name；对外提供setName（），getName（）；</p>
+<p>抽象:抽象就是找出一些事务的相似和共性的地方，然后将这些事务归为一个类。举例。对于人，都有共同的属性姓名，年龄等，所以把这些的共同的属性抽象为一个类Person。</p>
+<p>继承： 继承是子对象可以继承父对象的属性和行为，亦即父对象拥有的属性和行为，其子对象也就拥有了这些属性和行为。</p>
+<p> 多态：顾名思义，就是意味着某一时刻程序对应着多个可能的状态，在面向对象里，分为两种多态，第一种是编译时多态，主要指方法的重载，，第二种是运行时多态，通过动态绑定来实现，这是我们更常说的多态。  </p>
+<p>举例：对于动物Animal这个类，都有固有的行为吃cat()。定义一个dog类，继承这个Animal，并重写吃这个方法，此时Animal a = new Dog();调用a.cat()。这就是一个多态</p>
+<p>多态发生的几个必要条件：</p>
+<ol>
+<li>继承，从而出现多个不同子类；</li>
+<li>重写，在子类中覆盖父类的方法；</li>
+<li>向上转型，引用变量只能访问父类中拥有的方法和属性，而对于子类中存在而父类中不存在的方法，是不能使用的；</li>
+</ol>
+<h2 id="7-有了基本数据类型，为什么还需要包装类型"><a href="#7-有了基本数据类型，为什么还需要包装类型" class="headerlink" title="7.有了基本数据类型，为什么还需要包装类型"></a>7.有了基本数据类型，为什么还需要包装类型</h2><p>更符合java面向对象的特征，而基本数据类型他不具备面向对象的特征</p>
+<p>有了对象之后，就可以调用对象的属性和行为。所以就比较方便</p>
+<p>举例：就比如说Integer这个类中，他有Max，min这两个静态属性这样就可以用Integer.Max来得到值。</p>
+<h2 id="8-说一下”-”和equals方法究竟有什么区别"><a href="#8-说一下”-”和equals方法究竟有什么区别" class="headerlink" title="8.说一下”==”和equals方法究竟有什么区别"></a>8.说一下”==”和equals方法究竟有什么区别</h2><p>“==”用来比较两个变量之间的值或者是是否相等，其中变量可以是基本数据类型和引用数据类型，如果是基本数据类型，则比较的是直接比较的值，引用数据类型比较的是地址</p>
+<p>equals用来判断两个对象的某些特征是否一样。如果一个类重写了Object类中的equals的equals方法，则比较的是两个对象的内容是否相等，如果没有重写，则比较的是两个对象的地址是否相等</p>
+<h2 id="9-讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别"><a href="#9-讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别" class="headerlink" title="9.讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别?"></a>9.讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别?</h2><p>java中提供了三个类，String，StringBuilder,StringBuffer来操作和表示字符串</p>
+<p>String是内容不可变的字符串。String底层使用了一个不可变的字符数组（final char[]）</p>
+<p>StringBuilder,StringBuffer，是内容可以改变的字符串。底层使用了可以改变的字符数组，没有用final修饰</p>
+<p>所以在拼接字符串时要用StringBuilder,StringBuffer，因为调用append方法后不用创建新的对象，而String在进行拼接时要创建对各对象，所以效率低</p>
+<p>StringBuffer和StringBuilder的区别：StringBuilder是线程不安全的效率高，而StringBuffer是线程安全的，效率低。（加了锁的原因）</p>
+<h2 id="10-讲下java中的集合"><a href="#10-讲下java中的集合" class="headerlink" title="10.讲下java中的集合"></a>10.讲下java中的集合</h2><p>java中的集合分为value，和key-value（Collection，Map）两种。</p>
+<p>●    存储值的集合有List和Set    </p>
+<p>​     List是有序的，可以重复的 </p>
+<p>​    Set是无序的，不可以重复的。根据equals和hashCode来判断。如果以对象要存储在Set集合中，必须要重写equals和hashCode方法</p>
+<p>原因：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.add方法首先调用元素的hashCode方法获取该元素的哈希值，再判断Set集合中有没有元素的哈希值与之重复。如果没	有，就会把新的元素存储到数组中。</span><br><span class="line">2.如果有重复的哈希值（哈希冲突），再调用元素的equals方法和Set中已有的哈希值相同的元素进行比较：</span><br><span class="line">	如果equals方法返回true，认定两个元素相同，就不会把新元素存储到集合中；</span><br><span class="line">	如果equals方法返回false，则认定两个元素内容不同，就会把新元素存储到集合中，放在同一个哈希值下形成链表。</span><br></pre></td></tr></table></figure>
 
+
+
+<p>●    存储key-value的集合有Map</p>
+<h2 id="11-ArrayList和LinkedList的区别和使用场景"><a href="#11-ArrayList和LinkedList的区别和使用场景" class="headerlink" title="11.ArrayList和LinkedList的区别和使用场景"></a>11.ArrayList和LinkedList的区别和使用场景</h2><p>● 区别</p>
+<p>ArrayList底层是使用的数组。数组具有索引，查询特定的元素比较快，增删比较慢（数组在内存中是一块连续的内存，如果增删是需要移动内存的）</p>
+<p>LinkedList使用的是链表。查询比较慢，增删比较快。链表不要求内存是连续的，在当前元素中存放着下一个元素的地址。所以查询是需要找一个个的节点，来找到所查询的元素。而对于增删是不需要移动内存的，只需要改变每个节点中存放的地址即可</p>
+<p>● 使用场景：ArrayList使用在查询比较多，增删比较少的场景，而LinkedList使用在增删比较多，查询较少的场景</p>
+<h2 id="12-讲下HashMap和HashTable的区别-CurrentHashMap？"><a href="#12-讲下HashMap和HashTable的区别-CurrentHashMap？" class="headerlink" title="12.讲下HashMap和HashTable的区别?CurrentHashMap？"></a>12.讲下HashMap和HashTable的区别?CurrentHashMap？</h2><p>● HashMap和HashTable的区别:</p>
+<p>​    相同点:</p>
+<p>​    1.HashMap和HashTable都可以存储key-value的数据</p>
+<p>​    不同点：</p>
+<p>​    1.HashMap是可以把null作为key或者value的，而HashTable是不可以的</p>
+<p>​    2.HashMap是线程不安全的，效率高。而HashTable是线程安全的，效率低</p>
+<p>● CurrentHashMap 融合了hashtable和hashmap二者的优势。在保证线程安全的同时执行效率也高</p>
+<p>原理：通过把整个Map分为N个Segment（类似hashTable）。可以提供相同的线程安全，但是效率提升了N倍，默认提升是16倍。</p>
+<h2 id="13-实现一个拷贝文件的工具类使用字节流还是字符流"><a href="#13-实现一个拷贝文件的工具类使用字节流还是字符流" class="headerlink" title="13.实现一个拷贝文件的工具类使用字节流还是字符流"></a>13.实现一个拷贝文件的工具类使用字节流还是字符流</h2><p>使用字符流一般只能拷贝纯文本类型文件，而对于一些图片，声音，视频不能 拷贝，会乱码。</p>
+<p>而使用字节流都能拷贝。所以为了通用化所以采用字节流来编写拷贝文件工具类</p>
+<h2 id="14-讲一下线程的实现方式及优缺点，启动方式，怎么区分"><a href="#14-讲一下线程的实现方式及优缺点，启动方式，怎么区分" class="headerlink" title="14.讲一下线程的实现方式及优缺点，启动方式，怎么区分"></a>14.讲一下线程的实现方式及优缺点，启动方式，怎么区分</h2><p>● 实现方式</p>
+<p>​    1.通过继承Thread类实现一个线程</p>
+<p>​    2.通过实现Runnable接口实现一个线程</p>
+<p>​    3.实现Callable接口通过FutureTask包装器来实现的线程</p>
+<p>● 优缺点</p>
+<p>​    继承Thread类实现一个线程缺点：继承的扩展性不强，java只支持单继承，入如果一个类继承了Thread就不能继承其他类了</p>
+<p>​    实现Runnable接口实现一个线程优点：java可以多实现，所以这种方式的扩展性强</p>
+<p>● 启动方式</p>
+<p>​    第一种</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tang.episode2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadDemo02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> MyThread().start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(Thread.currentThread().getName()+<span class="string">"--&gt;我是通过继承Thread类来实现线程"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    第二种</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tang.episode2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadDemo03</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+<span class="string">"--&gt;我是通过继承Runnable接口实现线程的"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第三种:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.tang.episode2;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.Callable;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.FutureTask;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadDemo01</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Callable&lt;Object&gt; callable = <span class="keyword">new</span> Tickets&lt;&gt;();</span><br><span class="line">        FutureTask&lt;Object&gt; task = <span class="keyword">new</span> FutureTask&lt;&gt;(callable);</span><br><span class="line">        <span class="keyword">new</span> Thread(task).start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tickets</span>&lt;<span class="title">Object</span>&gt; <span class="keyword">implements</span> <span class="title">Callable</span>&lt;<span class="title">Object</span>&gt; </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(Thread.currentThread().getName()+<span class="string">"--&gt;我是通过实现Callable接口通过FutureTask包装器来实现的线程"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>注意启动线程智能使用start方法，不能使用run方法。因为使用run方法，就相当于普通的方法调用了。</p>
+<p>● 怎么区分线程？在一个系统中有很多线程，每个线程都会打印日志，我想区分是哪个线程打印的怎么办?</p>
+<p>​    Thread.setName[“设置一个线程名称”]。这是一种规范，在创建线程完成后，都需要设置名称</p>
+<h2 id="15-有没有使用线程并发库-java中怎么创建线程池？线程池的作用？"><a href="#15-有没有使用线程并发库-java中怎么创建线程池？线程池的作用？" class="headerlink" title="15.有没有使用线程并发库,java中怎么创建线程池？线程池的作用？"></a>15.有没有使用线程并发库,java中怎么创建线程池？线程池的作用？</h2><p>简单了解过</p>
+<p>● 创建线程池</p>
+<p>java通过Executors提供了四种线程池，分别为</p>
+<p>1.newCachedThreadPool创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。</p>
+<p>2.newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。</p>
+<p>3.newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。</p>
+<p>4.newSingleThreadExecutor 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。</p>
+<p>● 线程池的作用</p>
+<p>​    1.限定线程的个数，不会导致由于线程过多导致系统运行缓慢或崩溃</p>
+<p>​    2.线程池不需要每次创建和销毁，节约了资源</p>
+<p>​    3.响应时间快</p>
+<h2 id="16-讲一下什么是设计模式-常用的设计模式有哪些"><a href="#16-讲一下什么是设计模式-常用的设计模式有哪些" class="headerlink" title="16.讲一下什么是设计模式?常用的设计模式有哪些?"></a>16.讲一下什么是设计模式?常用的设计模式有哪些?</h2><p>设计模式是经过前人实践总结出来的，可以反复使用的，解决特定问题的设计方法。</p>
+<p>设计模式（23种）：</p>
+<p>单例模式：饿汉式，懒汉式，枚举式，登记式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">单例模式</span><br><span class="line">1.手写单利模式</span><br><span class="line">2.线程安全的单例模式</span><br><span class="line"></span><br><span class="line">什么是单例</span><br><span class="line">单例类在整个程序中只能有一个实例，这个类负责创建自己的对象，并确保只有一个对象被创建</span><br><span class="line"></span><br><span class="line">代码实现要点</span><br><span class="line">a)  私有构造器</span><br><span class="line">b)  持有该类的属性</span><br><span class="line">c)  对外提供获取实例的静态方法</span><br><span class="line"></span><br><span class="line">饿汉式:线程安全，反射不安全，反序列化不安全</span><br><span class="line">登记式：线程安全，防止反射攻击，反序列化不安全</span><br><span class="line">枚举式：线程安全，反射安全，反序列化安全</span><br><span class="line">懒汉式：线程不安全，延迟加载,可以加同步，但是效率低</span><br></pre></td></tr></table></figure>
+
+
+
+<p>工厂模式：Spring 的Ioc就是使用了工厂模式</p>
+<p>​                    对象的创建交给一个工厂去创建，自己不用去创建</p>
+<p>代理模式：Spring的AOP就是使用了代理模式</p>
+<h2 id="17-讲一下http-get和post请求的区别"><a href="#17-讲一下http-get和post请求的区别" class="headerlink" title="17.讲一下http get和post请求的区别"></a>17.讲一下http get和post请求的区别</h2><p>1.get和post请求都是http的请求方式。</p>
+<p>2.get请求一般用于获取/查询资源信息，而post请求一般用于更新资源信息</p>
+<p>3.get请求提交的数据会在地址栏显示，而post请求将提交的参数放在请求体中</p>
+<p>4.传输数据的大小不同，浏览器对地址栏长度有限制，所以get请求传输数据的大小受限，而post请求参数是在请求体中，所以相对get请求传输数据的大小大一点。</p>
+<p>5.get请求相对不安全，post请求相对安全</p>
+<h2 id="18-说一下你对servlet的理解？或者servlet是什么？"><a href="#18-说一下你对servlet的理解？或者servlet是什么？" class="headerlink" title="18.说一下你对servlet的理解？或者servlet是什么？"></a>18.说一下你对servlet的理解？或者servlet是什么？</h2><p>1.servlet（Server Applet）使用java语言编写的服务端程序。而这些Servlet都要实现Servlet接口</p>
+<p>2.其主要功能在于交互式地浏览和修改数据，生成动态Web内容。</p>
+<p>3.创建Servlet步骤:实现Httpservlet重写doGet和doPost方法。</p>
+<h2 id="19-简单说一下servlet的生命周期"><a href="#19-简单说一下servlet的生命周期" class="headerlink" title="19.简单说一下servlet的生命周期"></a>19.简单说一下servlet的生命周期</h2><p> 首先加载servlet的class，实例化servlet，然后初始化servlet调用init()的方法，接着调用服务的service的方法处理doGet和doPost方法，最后是容器关闭时候调用destroy 销毁方法。 </p>
+<p>简单的说：加载–&gt;实例化–&gt;初始化–&gt;处理请求–&gt;服务销毁 对应着init(),service(),destory()方法</p>
+<h2 id="20-servlet-API中forward-和redirect-的区别"><a href="#20-servlet-API中forward-和redirect-的区别" class="headerlink" title="20.servlet API中forward()和redirect()的区别?"></a>20.servlet API中forward()和redirect()的区别?</h2><p>1.forward时服务器的内部跳转，而redirect是客户端的跳转</p>
+<p>2.使用forward地址栏不会变化，而redirect会变化</p>
+<p>3.forward是在一次请求中完成，而redirect是重新发起请求,所以forward效率要高</p>
+<h2 id="21-Jsp和servlet有哪些相同点和不同点"><a href="#21-Jsp和servlet有哪些相同点和不同点" class="headerlink" title="21.Jsp和servlet有哪些相同点和不同点"></a>21.Jsp和servlet有哪些相同点和不同点</h2><p>● 相同点：Jsp是servlet的技术扩展，所有的jsp都会翻译成继承httpServlet的类，也就是说jsp也是一个servlet。然后对外提供服务。</p>
+<p>● 不同点：在jsp中既可以写java代码，也可以写html页面。他侧重于视图，而servlet侧重于控制逻辑</p>
+<h2 id="22-jsp有哪些内置对象？以及四大作用域？"><a href="#22-jsp有哪些内置对象？以及四大作用域？" class="headerlink" title="22.jsp有哪些内置对象？以及四大作用域？"></a>22.jsp有哪些内置对象？以及四大作用域？</h2><p> JSP中一共预先定义了9个这样的对象，分别为：request、response、session、application、out、pagecontext、config、page、exception </p>
+<p>四大作用域:pageContext request session application 可以通过el表达式从四大作用域中取值</p>
+<h2 id="23-说一下session和cookie的区别-使用场景？"><a href="#23-说一下session和cookie的区别-使用场景？" class="headerlink" title="23.说一下session和cookie的区别?使用场景？"></a>23.说一下session和cookie的区别?使用场景？</h2><p>● 相同点：session和cookie都是会话跟踪技术。Session的实现要依赖于Cookie，Session的唯一标识SessionId存放在cookie中</p>
+<p>● 不同点：1.cookie数据存放在客户端浏览器上，而session数据是存放在服务器上的</p>
+<p>​                   2.cookie没有session安全。因为可以编辑伪造，不是十分安全 </p>
+<p>​                   3.cookie保存的数据大小有限制。</p>
+<p>​                   4.cookie保存的是字符串，而session保存的是对象。</p>
+<p>​                   5.session需要借助cookie。客户端发送请求到服务器，建立一次会话，生成一个sessionId,并把生成的                      sessionId发送到客户端，客户端把sessionId存储在cookie中，下次在带着这个sessionId请求服务                      端，服务端拿着这个sessionId和保存的所有sessionId进行比对。这样就能识别用户的身份了。</p>
+<p>● 使用场景：将登陆信息等重要信息保存在session中</p>
+<p>​                        其他非重要信息存放在cookie中</p>
+<h2 id="24-MVC的各部分都有哪些技术来实现"><a href="#24-MVC的各部分都有哪些技术来实现" class="headerlink" title="24.MVC的各部分都有哪些技术来实现"></a>24.MVC的各部分都有哪些技术来实现</h2><p>M：model 模型 javabean</p>
+<p>V：view 试图    heml，jsp，freemarker</p>
+<p>C：控制器    servlet，Action</p>
+<h2 id="25-数据库的分类及它们的常用数据库"><a href="#25-数据库的分类及它们的常用数据库" class="headerlink" title="25.数据库的分类及它们的常用数据库"></a>25.数据库的分类及它们的常用数据库</h2><p>关系型数据库:mysql,oracle…</p>
+<p>非关系型数据库::redis,mogodb,hadoop…</p>
+<h2 id="26-简单介绍一下关系型数据库的三大范式"><a href="#26-简单介绍一下关系型数据库的三大范式" class="headerlink" title="26.简单介绍一下关系型数据库的三大范式"></a>26.简单介绍一下关系型数据库的三大范式</h2><p>范式就是规范。要满足第二范式必须先满足第一范式，要满足第三范式，就必须满足第二范式</p>
+<p>第一范式（1NF）：是指数据库表的每一列都是不可分割的基本数据项，同一列中不能有多个值。（原子性）</p>
+<p>举例，数据库中有电话这一个字段，但是不知道他是手机号，还是座机号。所以不明确。就出现了，同一列中有多个值</p>
+<p>第二范式(2NF): 在满足第一范式的基础上，实体的每个非主键属性完全依赖于主键属性（消除部分依赖） </p>
+<p>第三范式(3NF): 在满足第二范式的基础上，在实体中不存在非主键属性传递依赖于主键属性。 (消除传递依赖)</p>
+<h2 id="27-事务是什么？事务的四个基本特征ACID特性"><a href="#27-事务是什么？事务的四个基本特征ACID特性" class="headerlink" title="27.事务是什么？事务的四个基本特征ACID特性"></a>27.事务是什么？事务的四个基本特征ACID特性</h2><p>● 事务:事务是用户定义的一个操作序列。这些操作要么多做，要么都不做。是一个不可分割的工作单位。比如说转账。A账号扣钱，B账号价钱。这两个操作必须同时完成，只要一个环节出差，那么这些操做都不能完成。</p>
+<p>● 特征：</p>
+<p>原子性：指事务内操作不可分割，要么都成功，要么都失败</p>
+<p>一致性： 一 事务的执行使数据从一个状态转换为另一个状态，但是对于整个数据的完整性保持稳定。 举例来说，假设用户A和用户B两者的钱加起来一共是1000，那么不管A和B之间如何转账、转几次账，事务结束后两个用户的钱相加起来应该还得是1000，这就是事务的一致性。 </p>
+<p>隔离性：隔离性是当多个用户并发访问数据库时，比如操作同一张表时，数据库为每一个用户开启的事务，不能被其他事务的操作所干扰，多个并发事务之间要相互隔离。 即要达到这么一种效果：对于任意两个并发的事务T1和T2，在事务T1看来，T2要么在T1开始之前就已经结束，要么在T1结束之后才开始，这样每个事务都感觉不到有其他事务在并发地执行。</p>
+<p>持久性： 持久性是指一个事务一旦被提交了，那么对数据库中的数据的改变就是永久性的     `</p>
+<h2 id="28-mysql数据库的默认最大连接数"><a href="#28-mysql数据库的默认最大连接数" class="headerlink" title="28.mysql数据库的默认最大连接数"></a>28.mysql数据库的默认最大连接数</h2><p>100 在mysql的配置文件my.ini中可以进行修改</p>
+<h2 id="29-说一下msql的分页？oracle的分页"><a href="#29-说一下msql的分页？oracle的分页" class="headerlink" title="29.说一下msql的分页？oracle的分页?"></a>29.说一下msql的分页？oracle的分页?</h2><p>Mysql是使用关键字Limit关键字来进行分页的 limit ?,?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from user limit 0,10;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>Oracle分页:使用三层嵌套查询</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SELECT *</span><br><span class="line"></span><br><span class="line">  FROM (SELECT a.*, ROWNUM rn</span><br><span class="line"></span><br><span class="line">          FROM (SELECT *</span><br><span class="line"></span><br><span class="line">                  FROM table_name) a</span><br><span class="line"></span><br><span class="line">         WHERE ROWNUM &lt;&#x3D; 40)</span><br><span class="line"></span><br><span class="line"> WHERE rn &gt;&#x3D; 21</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="30-多线程中sleep，wait，yield，join的区别"><a href="#30-多线程中sleep，wait，yield，join的区别" class="headerlink" title="30.多线程中sleep，wait，yield，join的区别"></a>30.多线程中sleep，wait，yield，join的区别</h2><p>sleep:使当前线程处于睡眠状态，他不会释放锁，就是说，当一个方法加了同步代码块之后，调用sleep方法后，其他线程仍然不会访问到该方法。同时sleep方法也可以接受一个时间参数，当指定时间过后，该线程就会处于一个线程就绪状态，继续等待cpu分配时间片</p>
+<p>wait：使当前线程处于等待状态，但是它会释放锁， 从而使别的线程有机会抢占该锁。 如果wait方法没有传递参数时，则必须等待 notify，notifyAll方法来唤醒等待的线程 。当wait方法有时间参数时， 时间一到，不需要唤醒，可以自己重新抢锁，继续执行。 </p>
+<p>yield： 暂停当前正在执行的线程对象。不放锁！！！！  yield()只是使当前线程重新回到就绪状态，所以还可能继续抢到执行权，继续执行。<br>yield()只能使同优先级或更高优先级的线程有执行的机会。机会我已经给让你们了，能不能抢过我，那就看优先级和听天由命了。 </p>
+<p>join： 等待调用join方法的线程结束，再继续执行 </p>
+<h2 id="31-notify-和-notifyAll-有什么区别？"><a href="#31-notify-和-notifyAll-有什么区别？" class="headerlink" title="31.notify()和 notifyAll()有什么区别？"></a>31.notify()和 notifyAll()有什么区别？</h2><p>1.如果线程调用了对象的 wait()方法，那么线程便会处于该对象的等待池中，等待池中的线程不会去竞争该对象的锁 </p>
+<p>2.当有线程调用了对象的 notifyAll()方法（唤醒所有 wait 线程）或 notify()方法（只随机唤醒一个 wait 线程），被唤醒的的线程便会进入该对象的锁池中，锁池中的线程会去竞争该对象锁。也就是说，调用了notify后只要一个线程会由等待池进入锁池，而notifyAll会将该对象等待池内的所有线程移动到锁池中，等待锁竞争。 </p>
+<h2 id="32-Spring-bean的生命周期"><a href="#32-Spring-bean的生命周期" class="headerlink" title="32.Spring bean的生命周期"></a>32.Spring bean的生命周期</h2><p>1）实例化Bean对象</p>
+<p>2）通过setter方法设置Bean属性</p>
+<p>3）如果分别实现了BeanNameAware，BeanFactoryAware，和ApplicationContextAware接口，则会分别注入Bean Id ，Bean Factory或者ApplicationContext</p>
+<p>4）如果实现了BeanPostProcesser接口，则会调用BeanPostProcesser的前置初始化方法postProcessBeforeInitialization方法</p>
+<p>5）如果实现了InitializingBean接口，则会调用afterPropertiesSet方法</p>
+<p>6）调用Bean自身定义的init方法</p>
+<p>7）调用BeanPostProcesser的后置初方法postProcessAfterInitialization</p>
+<p>到此创建完毕</p>
+<p>8）销毁：可以通过实现DisposableBean接口调用destroy方法或者Bean自身的销毁方法des()</p>
+<h2 id="33-Spring-Bean的作用域"><a href="#33-Spring-Bean的作用域" class="headerlink" title="33.Spring Bean的作用域"></a>33.Spring Bean的作用域</h2><p>SpringBean有五个作用域，最基础的有两种，后三种在Web容器中</p>
+<p>1）singleton，这是Spring的默认作用域，每个ioc容器创建唯一的一个Bean</p>
+<p>2）prototype：针对每个getBean请求，容器会创建单独的Bean实例</p>
+<p>3）request针对每个HTTP请求都创建单独的Bean实例</p>
+<p>4）session，同一个Session范围内使用一个Bean</p>
+<p>5）GloSession，用于Portlet容器，提供了一个全局的Http session.</p>
+<h2 id="34-Spring-AOP"><a href="#34-Spring-AOP" class="headerlink" title="34.Spring AOP"></a>34.Spring AOP</h2><p>应用：Spring项目中的事务，安全，日志等功能都可以用AOP（面向切面编程）技术</p>
+<p>​    AOP底层基于JDK动态代理或者cglib字节码操作技术，运行时动态生成被调用类型的子类，并实例化代理对象</p>
+<p>核心概念：</p>
+<p>Aspect 切面：是pointcut和advice的组合，它将切面的横切逻辑织入到切面中所指定的切入点中。</p>
+<p>Joint point 切入点：在Spring AOP中，总是方法的执行点</p>
+<p>Advice通知：所要执行的动作.包括前置通知，后置通知，异常通知，最终通知，环绕通知。（Before,after Returnning,After Throwing,After(finally),Around）</p>
+<h2 id="35-Spring中的设计模式"><a href="#35-Spring中的设计模式" class="headerlink" title="35.Spring中的设计模式"></a>35.Spring中的设计模式</h2><p>1）Spring容器(BeanFactory和ApplicationContext)应用了工厂设计模式</p>
+<p>2)   在Bean的创建中，Spring提供了单例和原型等模式</p>
+<p>3）在AOP领域应用了代理模式,装饰器模式，适配器模式</p>
+<p>4）在事件监听使用的是观察者模式</p>
+<p>5）类似于jdbcTemplate等模板对象，使用的是模板模式</p>
+<h2 id="36-谈谈对SpringMVC的理解"><a href="#36-谈谈对SpringMVC的理解" class="headerlink" title="36.谈谈对SpringMVC的理解"></a>36.谈谈对SpringMVC的理解</h2><p>核心组件：</p>
+<p>​    DispatcherServlet:前端控制器，整个流程控制的中心，控制其他组件执行，统一调度，降低每个组件的耦合          性，提高每个组件的扩展性。    </p>
+<p>​    Handler:(Controller)后端控制器，负责处理请求的控制逻辑。</p>
+<p>​    HandlerMapping:映射器对象，用于管理url与对应controller的映射关系</p>
+<p>​    HandlerAdapter:适配器，主要处理方法参数，相关注解，数据绑定，消息转换，返回值，调用视图解析器等</p>
+<p>​    ViewResolver:视图解析器，解析对应的视图关系</p>
+<p>执行流程：</p>
+<p>​    1）发送请求到前端控制器 (DispatcherServlet) </p>
+<p>​    2）:DispatcherServlet 接收到请求后，将根据请求信息交给处理器映射器(HandleMapping)</p>
+<p>​    3）:HandlerMapping 根据用户的url请求查找匹配该url的Handler，并返回一个执行器链    HandlerExecutionChain</p>
+<p>   4）:DispatcherServlet 再请求处理器适配器（HandlerAdapter）调用相应的Handler进行处理并返回ModelAndView给DispatcherServlet </p>
+<p>​    5）: DispatcherServlet  将ModelAndView请求ViewReslover(视图解析器)解析，返回具体view</p>
+<p>​    6）: DispatcherServlet  对view进行渲染视图（即将模板数据填充至视图）</p>
+<p>​    7）: DispatcherServlet   将页面响应给用户</p>
+<p>​    </p>
+<h2 id="37-Mybatis中的-和-的区别"><a href="#37-Mybatis中的-和-的区别" class="headerlink" title="37.Mybatis中的$和#的区别"></a>37.Mybatis中的$和#的区别</h2><p>​        #{}：解析为一个JDBC预编译语句的参数占位符</p>
+<p>​        一个#{}被解析为一个参数占位符 “？”。</p>
+<p>​        （select * from user where name = #{name};  解析为select * from user where name = ?)</p>
+<p>​        ${} : 直接替换值</p>
+<p>​            (select * from )user where name = ${name}; 解析为：select * from user where name = ‘Jack’;)</p>
+<p>​        能使用#{}的地方就用#{}，相同的预编译sql可以重复利用，避免sql注入</p>
+<p>​        当表名，字段名需要动态替换的时候就用${}，其他情况都不用${}，可能会sql注入</p>
+<h2 id="38-Spring事务"><a href="#38-Spring事务" class="headerlink" title="38.Spring事务"></a>38.Spring事务</h2><p>​    隔离级别：</p>
+<p>​    ● ISOLATION_DEFAULT 这是一个PlatfromTransactionManager默认的隔离级别，使用数据库默认的事务隔离        级别.另外四个与JDBC的隔离级别相对应<br>​    ●ISOLATION_READ_UNCOMMITTED 这是事务最低的隔离级别，它充许别外一个事务可以看到这个事务未提交      的数据。这种隔离级别会产生脏读，不可重复读和幻像读</p>
+<p>​    ●ISOLATION_READ_COMMITTED 保证一个事务修改的数据提交后才能被另外一个事务读取。另外一个事务不    能读取该事务未提交的数据。这种事务隔离级别可以避免脏读出现，但是可能会出现不可重复读和幻像读。</p>
+<p>​    ●ISOLATION_REPEATABLE_READ 这种事务隔离级别可以防止脏读，不可重复读。但是可能出现幻像读。它除    了保证一个事务不能读取另一个事务未提交的数据外，还保证了避免下面的情况产生(不可重复读)。</p>
+<p>​    ●ISOLATION_SERIALIZABLE 这是花费最高代价但是最可靠的事务隔离级别。事务被处理为顺序执行。除了防止    脏读，不可重复读外，还避免了幻像读。</p>
+<p>​    传播机制:</p>
+<ul>
+<li>PROPAGATION_REQUIRED: 支持当前事务，如果当前没有事务，就新建一个事务。这是最常见的选择。</li>
+<li>PROPAGATION_SUPPORTS: 支持当前事务，如果当前没有事务，就以非事务方式执行。</li>
+<li>PROPAGATION_MANDATORY: 支持当前事务，如果当前没有事务，就抛出异常。</li>
+<li>PROPAGATION_REQUIRES_NEW: 新建事务，如果当前存在事务，把当前事务挂起。</li>
+<li>PROPAGATION_NOT_SUPPORTED: 以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。</li>
+<li>PROPAGATION_NEVER: 以非事务方式执行，如果当前存在事务，则抛出异常。</li>
+<li>PROPAGATION_NESTED: 如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则进行与PROPAGATION_REQUIRED类似的操作。</li>
+</ul>
+<h2 id="39-BeanFactory和ApplicationContext有什么区别？"><a href="#39-BeanFactory和ApplicationContext有什么区别？" class="headerlink" title="39.BeanFactory和ApplicationContext有什么区别？"></a>39.BeanFactory和ApplicationContext有什么区别？</h2><p>● 相同点：两者都是通过xml配置文件加载bean,ApplicationContext和BeanFacotry相比,提供了更多的扩展功能。</p>
+<p>● 不同点：BeanFactory是延迟加载,如果Bean的某一个属性没有注入，BeanFacotry加载后，直至第一次使用调用getBean方法才会抛出异常；而ApplicationContext则在初始化自身时检验，这样有利于检查所依赖属性是否注入；所以通常情况下我们选择使用ApplicationContext。</p>
+<h2 id="40-Mybatis的缓存"><a href="#40-Mybatis的缓存" class="headerlink" title="40.Mybatis的缓存"></a>40.Mybatis的缓存</h2><p>​    ● 一级缓存:SqlSession级别的缓存，同一个Sqlsession对象，在参数和sql完全一样的情况下，只执行一次sql，默认开启，不能关闭。</p>
+<p>​    ● 二级缓存：SqlSessionFactory级别的缓存，需要我们在主配置文件和映射配置文件中开启二级缓存。</p>
+<p>​    注：当我们执行增删改的时候，会自动清空缓存</p>
+<p>使用场景：当查询操作很高，增删改操作较少的时候使用。</p>
+<h2 id="41-下面代码创建了几个对象。输出是什么"><a href="#41-下面代码创建了几个对象。输出是什么" class="headerlink" title="41.下面代码创建了几个对象。输出是什么"></a>41.下面代码创建了几个对象。输出是什么</h2><p>String s1 = new String(“abc”);</p>
+<p>String s2 = new String(“abc”);</p>
+<p>System.out.Println(s1==s2);</p>
+<p>解读:String s1 = new String(“abc”);</p>
+<p>“abc”是常量池中的对象。new String()时，会将池中的对象复制一份到堆中，并且把堆中的引用交给s1。</p>
+<p>上述代码中常量池中有一个，heap中有两个。s1和s2是引用，==比较的是内存地址，两个引用指向的是不同的地址，输出false。</p>
+<h2 id="42-HashMap的原理-JDK7，JDK8"><a href="#42-HashMap的原理-JDK7，JDK8" class="headerlink" title="42.HashMap的原理(JDK7，JDK8)"></a>42.HashMap的原理(JDK7，JDK8)</h2><p>JDK7:</p>
+<p>1.对于JDK7：HashMap的数据结构是数组+链表</p>
+<p>2.初始化:HashMap的构造方法在执行时会初始化一个数组table，大小为0。HashMap的PUT方法在执行时首先会判断table的大小是否为0，如果为0则会进行初始化,数组的默认大小为16，也可以通过构造方法指定。但是有时候并非是你指定的值，要进行判断，最终会初始化为一个大小<strong>大于等于n的二次方数</strong>的一个数组 。因为这样保证了接下来计算的索引值在0~(数组大小-1)之间</p>
+<p>3.put方法:</p>
+<p>​    1) int hashcode = key.hashCode(); </p>
+<p>​    2) int index = hashcode &amp; (数组长度-1)</p>
+<p>​    3) 判断索引位置处有没有元素，如果没有直接插入元素，如果有：</p>
+<p>​    4) 遍历index位置的链表，如果存在相同的key，则进行value覆盖，并且返回之前的value值</p>
+<p>​    5) 如果不存在相同的key将key，value封装为节点对象（Entry），将节点插在index位置上的链表的头部</p>
+<p>​    6) 将链表头节点移动到数组上</p>
+<p>4.get方法</p>
+<p>​    调用get(key值)同样也是通过key值计算hashcode，然后在计算索引，然后在遍历该索引出的链表，通过equals方法比较每个节点的key值是否一样，如果一样，则拿到对应的value值</p>
+<p>JDK8：</p>
+<p>JDK8的HashMap数据结构是数组+链表+红黑树</p>
+<p>当链表的节点数大于8之后，就会将链表转化为红黑数。这样，查询的性能就提升了，避免了一个索引出存在很长的链表。</p>
+<h2 id="43-TCP三次握手过程分析"><a href="#43-TCP三次握手过程分析" class="headerlink" title="43.TCP三次握手过程分析:"></a>43.TCP三次握手过程分析:</h2><p>TCP(Transmission Control Protocol)　传输控制协议</p>
+<p>TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接:</p>
+<p>位码即tcp标志位,有6种标示:SYN(synchronous建立联机) ACK(acknowledgement 确认) PSH(push传送) FIN(finish结束) RST(reset重置) URG(urgent紧急)</p>
+<p>Sequence number(顺序号码) Acknowledge number(确认号码)</p>
+<p>第一次握手：主机A发送位码为syn＝1,随机产生seq number=1234567的数据包到服务器，主机B由SYN=1知道，A要求建立联机；</p>
+<p>第二次握手：主机B收到请求后要确认联机信息，向A发送ack number=(主机A的seq+1),syn=1,ack=1,随机产生seq=7654321的包</p>
+<p>第三次握手：主机A收到后检查ack number是否正确，即第一次发送的seq number+1,以及位码ack是否为1，若正确，主机A会再发送ack number=(主机B的seq+1),ack=1，主机B收到后确认seq值与ack=1则连接建立成功。</p>
+<p>完成三次握手，主机A与主机B开始传送数据。</p>
+<h2 id="44-NOSql-Redis优点"><a href="#44-NOSql-Redis优点" class="headerlink" title="44.NOSql,Redis优点"></a>44.NOSql,Redis优点</h2><p>NOSql（Not Only Sql）,非关系型数据库。 本质上是一个 Key-Value 类型的内存数据库 。</p>
+<p>优点：1.数据存储在内存中，读写速度快。  Redis读的速度是110000次/s,写的速度是81000次/s。</p>
+<p>​            2.丰富的特性：可用于缓存，消息，按key设置过期时间，过期后将会自动删除 </p>
+<p>​            3.支持事务，操作都是原子性，所谓的原子性就是对数据的更改要么全部执行，要么全部不执行 </p>
+<p>​            4.支持丰富数据类型，支持string，list，set，sorted set，hash</p>
+<ol start="45">
+<li><p>Redis的数据类型</p>
+<p>1.String:字符串</p>
+<p>2.Hash:散列 类似与map</p>
+<p>3.List：列表</p>
+<p>4.Set：集合</p>
+<p>5.Sorted Set:有序集合</p>
+<p>[HyperLogLogs 超级日志 概率数据结构，用于计算唯一的事物]</p>
+<p>[Bitmaps 位图 位图不是实际的数据类型，而是在字符串类型上定义的一组面向为的操作]</p>
+</li>
+</ol>
+<ol start="46">
+<li><p>Redis常用命令:</p>
+<ol>
+<li><p>字符串类型 string</p>
+<p>​        1.存储： set key value</p>
+<p>​        2.获取： get key</p>
+<p>​        3.删除： del key</p>
+<ol start="2">
+<li><p>哈希类型 hash</p>
+<ol>
+<li><p>存储： hset key field value</p>
+</li>
+<li><p>获取： </p>
+<p>hget key field: 获取指定的field对应的值    </p>
+<p>hgetall key：获取所有的field和value</p>
+</li>
+<li><p>删除： hdel key field</p>
+</li>
+</ol>
+</li>
+<li><p>列表类型 list:可以添加一个元素到列表的头部（左边）或者尾部（右边）</p>
+<ol>
+<li><p>添加：</p>
+<ol>
+<li><p>lpush key value: 将元素加入列表左表</p>
+</li>
+<li><p>rpush key value：将元素加入列表右边</p>
+</li>
+</ol>
+</li>
+<li><p>获取：</p>
+<p>​    lrange key start end ：范围获取</p>
+</li>
+<li><p>删除：</p>
+<p>​    lpop key： 删除列表最左边的元素，并将元素返回</p>
+<p>​    rpop key： 删除列表最右边的元素，并将元素返回</p>
+</li>
+</ol>
+</li>
+<li><p>集合类型 set ： 不允许重复元素</p>
+<ol>
+<li>存储：sadd key value[value…]</li>
+<li>获取：smembers key:获取set集合中所有元素<ol start="3">
+<li>删除：srem key value:删除set集合中的某个元素    </li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>有序集合类型 sortedset：不允许重复元素，且元素有顺序.每个元素<br>都会关联一个double类型的数。redis正是通过分数来为集合中的成员进行从小到大的排序。</p>
+<pre><code>1. 存储：zadd key score value
+2. 获取：zrange key start end [withscores]
+
+3. 删除：zrem key value</code></pre></li>
+<li><p>通用命令</p>
+<ol>
+<li>keys * : 查询所有的键</li>
+<li>type key ： 获取键对应的value的类型</li>
+<li>del key：删除指定的key value</li>
+<li>expire key seconds:设置过期时间</li>
+<li>ttl key:查询key剩余过期时间</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="45-Redis协议"><a href="#45-Redis协议" class="headerlink" title="45.Redis协议"></a>45.Redis协议</h2><p>​                Redis服务器与客户端通过RESP协议。通讯时基于TCP的应用层协议。</p>
+<p>​                RESP协议的特点:容易实现，解析快，可读性强</p>
+<p>​                set hello redis</p>
+<p>​                对应的是：</p>
+<p>​                *3        //后面存在几个$</p>
+<p>​                $3        //后面字符串的长度</p>
+<p>​                SET        </p>
+<p>​                $5        //下一行是5个字符</p>
+<p>​                hello</p>
+<p>​                $5        //后面字符串的长度</p>
+<p>​                redis</p>
+<p>​                也就是最终对应的是：*3\r\n$3\r\nset\r\n$5\r\nhello\r\n$5\r\nredis</p>
+<h2 id="46-Redis架构模式"><a href="#46-Redis架构模式" class="headerlink" title="46.Redis架构模式"></a>46.Redis架构模式</h2><p>​        1.单机版:简单，内存容量有限，处理能力有限，无法高可用</p>
+<p>​        2.主从复制: 允许用户根据一个 Redis 服务器来创建任意多个该服务器的复制品，其中被复制的服务器为主服           务器（master），而通过复制创建出来的服务器复制品则为从服务器（slave）。 主服务器来承担写操作，           从服务器来承担读操作，主服务器会将数据同步到从服务器上。优点:降低redis的读压力。缺点:并没有解决</p>
+<p>​           写的压力，还有不能实现高可用。</p>
+<p>​        3.哨兵: sentinel 是一个分布式系统中监控 redis 主从服务器，并在主服务器下线时自动进行故障转移。  当一           个主服务器不能正常工作时 会选举一个从服务器作为主服务器。优点:保证了高可用，缺点：没有解决             master 写的压力 </p>
+<p>​        4.集群：Redis Cluster是Redis的内置集群，是无中心节点的集群架构。采用一种叫做 哈希槽 (hash slot) 的          方式来分配数据的，将数据存储到所对应的哈希槽区间的节点上，使用了主从复制，主节点失效，会自动选          举一个从节点为新的主节点。优点:解决了写(存储的压力)。缺点。数据都是分散的保存在各个节点上，不能          保证数据的强一致性。</p>
+<h2 id="47-Redis持久化"><a href="#47-Redis持久化" class="headerlink" title="47.Redis持久化"></a>47.Redis持久化</h2><p>Redis提供了两种持久化 的方式:RDB(默认)和AOF</p>
+<p>RDB:在指定的时间间隔能对数据进行快照存储，是在某个时间点将数据写入一个临时文件，持久化结束，用这个临时文件替换上次持久化的文件。</p>
+<p>优点：使用单独的子进程来进行持久化，主进程不会进行任何IO操作，保证了redis的高性能</p>
+<p>缺点:RDB是间隔一段时间进行持久化，如果持久化之间redis发送故障，会发生数据丢失。所以这种方式更适合数据要求不严谨的时候。当然这个时间间隔不能太短，因为频繁的进行数据的持久化是一个非常大的开销。影响性能。</p>
+<p>AOF：记录每次对服务器写的操作，以redis协议追加保存每次写的操作到文件末尾。当redis重启时会重新执行这些命令来恢复原始的数据</p>
+<p>优点:可以保存更高的数据完整，使用默认的每秒把缓存中的指令记录到磁盘中这一策略，Redis的性能依然很好。</p>
+<p>缺点：AOF文件比RDB文件大，且恢复的速度慢</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">RDB持久化配置</span><br><span class="line">Redis会将数据集的快照dump到dump.rdb文件中。此外，我们也可以通过配置文件来修改Redis服务器dump快照的频率，在打开6379.conf文件之后，我们搜索save，可以看到下面的配置信息：</span><br><span class="line"></span><br><span class="line">save 900 1              #在900秒(15分钟)之后，如果至少有1个key发生变化，则dump内存快照。</span><br><span class="line"></span><br><span class="line">save 300 10            #在300秒(5分钟)之后，如果至少有10个key发生变化，则dump内存快照。</span><br><span class="line"></span><br><span class="line">save 60 10000        #在60秒(1分钟)之后，如果至少有10000个key发生变化，则dump内存快照。</span><br><span class="line"></span><br><span class="line">AOF持久化配置</span><br><span class="line">在Redis的配置文件中存在三种同步方式，它们分别是：</span><br><span class="line"></span><br><span class="line">appendfsync always     #每次有数据修改发生时都会写入AOF文件。</span><br><span class="line"></span><br><span class="line">appendfsync everysec  #每秒钟同步一次，该策略为AOF的缺省策略。</span><br><span class="line"></span><br><span class="line">appendfsync no          #从不同步。高效但是数据不会被持久化。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="48-Redis的数据淘汰策略"><a href="#48-Redis的数据淘汰策略" class="headerlink" title="48.Redis的数据淘汰策略"></a>48.Redis的数据淘汰策略</h2><p><strong>Redis 内存数据集大小上升到一定大小的时候，就会进行数据淘汰策略。</strong></p>
+<p><strong>Redis 提供了 6 种数据淘汰策略：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用 的数据淘汰</span><br><span class="line">volatile-ttl：从已设置过期时间的数据集（server.db[i].expires）中挑选将要过期的数 据淘汰</span><br><span class="line">volatile-random：从已设置过期时间的数据集（server.db[i].expires）中任意选择数据 淘汰</span><br><span class="line">allkeys-lru：从数据集（server.db[i].dict）中挑选最近最少使用的数据淘汰</span><br><span class="line">allkeys-random：从数据集（server.db[i].dict）中任意选择数据淘汰</span><br><span class="line">no-enviction（驱逐）：禁止驱逐数据</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="49-缓存穿透，缓存雪崩，缓存击穿。"><a href="#49-缓存穿透，缓存雪崩，缓存击穿。" class="headerlink" title="49.缓存穿透，缓存雪崩，缓存击穿。"></a>49.缓存穿透，缓存雪崩，缓存击穿。</h2><p>缓存穿透:一般的缓存系统，都是通过key值去缓存查询，如果不存在对应的key，则回去数据库中查。</p>
+<p>​                一些大量的恶意的请求会故意的查询不存在的key，则数据库就会面临巨大的压力。</p>
+<p>解决方案:1):对在缓存，数据库中查询结果为空的数据的key也进行存储，当然值为null。这样下次恶意查询的时候返回null</p>
+<p>​                2): 采用布隆过滤器，将所有可能存在的数据哈希到一个足够大的bitmap中，当查询一个一定不存在的数据会被 这个bitmap拦截掉，从而避免了对底层存储系统的查询压力。 </p>
+<p>缓存雪崩：当缓存服务器重启或者大量的缓存集中在某一个时间段失效，这样在失效的时候，会给数据库造成很大压力，导致系统崩溃。</p>
+<p>解决方案:1):设置不同的过期时间。让缓存失效的时间点尽量均匀。</p>
+<p>​                2):在缓存失效后，加锁或者队列来控制读数据库和写缓存的线程数量。</p>
+<p>缓存击穿:对于一个非常热点的数据，在某个时间高并发的访问该数据。当这个数据的key失效时，则会有大量的请求访问数据库，从而给数据库造成很大压力。</p>
+<p>解决方案:对于这些热点数据设置过期时间永不过期。</p>
+<h2 id="50-三个线程循环打印ABC10次的两种种解决方法"><a href="#50-三个线程循环打印ABC10次的两种种解决方法" class="headerlink" title="50.三个线程循环打印ABC10次的两种种解决方法"></a>50.三个线程循环打印ABC10次的两种种解决方法</h2><p><strong>方法一</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">public class SleepExample extends Thread &#123;</span><br><span class="line">    private static int currentCount &#x3D; 0;</span><br><span class="line"></span><br><span class="line">    public SleepExample(String name) &#123;</span><br><span class="line">        this.setName(name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void run() &#123;</span><br><span class="line">        while (currentCount &lt; 30) &#123;</span><br><span class="line">            switch (currentCount % 3) &#123;</span><br><span class="line">                case 0:</span><br><span class="line">                    if (&quot;A&quot;.equals(getName())) &#123;</span><br><span class="line">                        printAndIncrease();</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">                case 1:</span><br><span class="line">                    if (&quot;B&quot;.equals(getName())) &#123;</span><br><span class="line">                        printAndIncrease();</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">                case 2:</span><br><span class="line">                    if (&quot;C&quot;.equals(getName())) &#123;</span><br><span class="line">                        printAndIncrease();</span><br><span class="line">                    &#125;</span><br><span class="line">                    break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void printAndIncrease() &#123;</span><br><span class="line">        print();</span><br><span class="line">        increase();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void print() &#123;</span><br><span class="line">        System.out.println(getName());</span><br><span class="line">        if (&quot;C&quot;.equals(getName())) &#123;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void increase() &#123;</span><br><span class="line">        currentCount++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        new SleepExample(&quot;A&quot;).start();</span><br><span class="line">        new SleepExample(&quot;B&quot;).start();</span><br><span class="line">        new SleepExample(&quot;C&quot;).start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>方法二</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">package my.thread.test;  </span><br><span class="line">  </span><br><span class="line">import java.util.concurrent.ExecutorService;  </span><br><span class="line">import java.util.concurrent.Executors;  </span><br><span class="line">  </span><br><span class="line">public class PrintThreadExample &#123;  </span><br><span class="line">  </span><br><span class="line">    public static void main(String[] args) &#123;  </span><br><span class="line">        PrintThreadExample example &#x3D; new PrintThreadExample();  </span><br><span class="line">  </span><br><span class="line">        LetterPrinter letterPrinter &#x3D; example.new LetterPrinter();  </span><br><span class="line">  </span><br><span class="line">        ExecutorService service &#x3D; Executors.newFixedThreadPool(3);  </span><br><span class="line">  </span><br><span class="line">        service.execute(example.new PrintRunnable(letterPrinter, &#39;A&#39;));  </span><br><span class="line">        service.execute(example.new PrintRunnable(letterPrinter, &#39;B&#39;));  </span><br><span class="line">        service.execute(example.new PrintRunnable(letterPrinter, &#39;C&#39;));  </span><br><span class="line">  </span><br><span class="line">        service.shutdown();  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    private class LetterPrinter &#123;  </span><br><span class="line">        private char letter &#x3D; &#39;A&#39;;  </span><br><span class="line">  </span><br><span class="line">        public void print() &#123;  </span><br><span class="line">            System.out.println(letter);  </span><br><span class="line">            if (&#39;C&#39; &#x3D;&#x3D; letter) &#123;  </span><br><span class="line">                System.out.println();  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        public void nextLetter() &#123;  </span><br><span class="line">            switch (letter) &#123;  </span><br><span class="line">            case &#39;A&#39;:  </span><br><span class="line">                letter &#x3D; &#39;B&#39;;  </span><br><span class="line">                break;  </span><br><span class="line">            case &#39;B&#39;:  </span><br><span class="line">                letter &#x3D; &#39;C&#39;;  </span><br><span class="line">                break;  </span><br><span class="line">            case &#39;C&#39;:  </span><br><span class="line">                letter &#x3D; &#39;A&#39;;  </span><br><span class="line">                break;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        &#x2F;** </span><br><span class="line">         * @return the letter </span><br><span class="line">         *&#x2F;  </span><br><span class="line">        public char getLetter() &#123;  </span><br><span class="line">            return letter;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">    private class PrintRunnable implements Runnable &#123;  </span><br><span class="line">  </span><br><span class="line">        private LetterPrinter letterPrinter &#x3D; null;  </span><br><span class="line">  </span><br><span class="line">        private char letter &#x3D; &#39; &#39;;  </span><br><span class="line">  </span><br><span class="line">        &#x2F;** </span><br><span class="line">         * @param letterPrinter </span><br><span class="line">         * @param letter </span><br><span class="line">         *&#x2F;  </span><br><span class="line">        public PrintRunnable(LetterPrinter letterPrinter, char letter) &#123;  </span><br><span class="line">            super();  </span><br><span class="line">            this.letterPrinter &#x3D; letterPrinter;  </span><br><span class="line">            this.letter &#x3D; letter;  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">        public void run() &#123;  </span><br><span class="line">            for (int i &#x3D; 0; i &lt; 10; i++) &#123;  </span><br><span class="line">                synchronized (letterPrinter) &#123;  </span><br><span class="line">                    while (letter !&#x3D; letterPrinter.getLetter()) &#123;  </span><br><span class="line">                        try &#123;  </span><br><span class="line">                            letterPrinter.wait();  </span><br><span class="line">                        &#125; catch (InterruptedException e) &#123;  </span><br><span class="line">                            &#x2F;&#x2F; TODO Auto-generated catch block  </span><br><span class="line">                            e.printStackTrace();  </span><br><span class="line">                        &#125;  </span><br><span class="line">                    &#125;  </span><br><span class="line">  </span><br><span class="line">                    letterPrinter.print();  </span><br><span class="line">                    letterPrinter.nextLetter();  </span><br><span class="line">                    letterPrinter.notifyAll();  </span><br><span class="line">  </span><br><span class="line">                &#125;  </span><br><span class="line">            &#125;  </span><br><span class="line">  </span><br><span class="line">        &#125;  </span><br><span class="line">  </span><br><span class="line">    &#125;  </span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="51-如何解决高并发"><a href="#51-如何解决高并发" class="headerlink" title="51.如何解决高并发"></a>51.如何解决高并发</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">1 从最基础的地方做起，优化我们写的代码，减少必要的资源浪费。</span><br><span class="line"></span><br><span class="line">  a、避免频繁的使用new对象，对于整个应用只需要存在一个实例的类，我们可以使用单例模式。对于String连接操作，使用StringBuffer或StringBuilder，对于工具类可以通过静态方法来访问。</span><br><span class="line"></span><br><span class="line">  b、避免使用错误的方式，尽量不用instanceof做条件判断。使用java中效率高的类，比如ArrayList比Vector性能好。</span><br><span class="line"></span><br><span class="line">2 html静态化</span><br><span class="line">  用户请求不需要在重新查询数据库在渲染页面了，而是直接在访问静态页面。从而减少了服务器的压力。</span><br><span class="line"></span><br><span class="line">3 图片服务器分离</span><br><span class="line"></span><br><span class="line">4 缓存</span><br><span class="line"></span><br><span class="line">将经常查询的且变化不大的数据进行缓存每次请求直接从缓存中取，也不需要访问数据库。减少服务器的压力。</span><br><span class="line"></span><br><span class="line">5 数据分批传送</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">6 数据库集群</span><br><span class="line"></span><br><span class="line">7 DB优化</span><br><span class="line"></span><br><span class="line">   a、在数据库设计的时候就要考虑到后期的维护，数据库三范式是我们设计数据库索要遵循的原则。</span><br><span class="line"></span><br><span class="line">   b、索引的建立：建立索引要适当，如果一个表经常用来被查询，对于增加和修改很少被用到，我们就可以为这个表建立索引，因为对于增加和修改和删除操作时，我们对索引的维护要大大超过索引给我们带来的效率。</span><br><span class="line"></span><br><span class="line">   c、表字段的类型选择要恰当包括字段的长度、类型等，要根据实际存储的数据进行选择，长度不要过长，否则会影响效率。</span><br><span class="line"></span><br><span class="line">   d、外键要慎用，因为主键代表这一张表，而外键代表一群表，对表之间进行了关联，在删除修改等需要我们关联。</span><br><span class="line"></span><br><span class="line">   e、在数据库操作上</span><br><span class="line"></span><br><span class="line">     尽量使用prepareStatement，少用Statement，因为PrepareStatement是进行预编译的。</span><br><span class="line"></span><br><span class="line">     connection设置为readOnly，Connection是对书库连接，属于重量级，我们使用即可。</span><br><span class="line"></span><br><span class="line">     连接池的使用，我们可以修改数据库默认的连接数。</span><br><span class="line"></span><br><span class="line">8硬件上做到负载均衡</span><br></pre></td></tr></table></figure>
+
+
+
+<p>死锁的概念:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">什么是死锁？</span><br><span class="line">所谓死锁，是指多个进程在运行过程中因争夺资源而造成的一种僵局，当进程处于这种僵持状态时，若无外力作用，它们都将无法再向前推进。 因此我们举个例子来描述，如果此时有一个线程A，按照先锁a再获得锁b的的顺序获得锁，而在此同时又有另外一个线程B，按照先锁b再锁a的顺序获得锁。如下图所示</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DeadLock</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String obj1 = <span class="string">"obj1"</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String obj2 = <span class="string">"obj2"</span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Thread a = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Lock1());</span><br><span class="line">        Thread b = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Lock2());</span><br><span class="line">        a.start();</span><br><span class="line">        b.start();</span><br><span class="line">    &#125;    </span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Lock1</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"Lock1 running"</span>);</span><br><span class="line">            <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">                <span class="keyword">synchronized</span>(DeadLock.obj1)&#123;</span><br><span class="line">                    System.out.println(<span class="string">"Lock1 lock obj1"</span>);</span><br><span class="line">                    Thread.sleep(<span class="number">3000</span>);<span class="comment">//获取obj1后先等一会儿，让Lock2有足够的时间锁住obj2</span></span><br><span class="line">                    <span class="keyword">synchronized</span>(DeadLock.obj2)&#123;</span><br><span class="line">                        System.out.println(<span class="string">"Lock1 lock obj2"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Lock2</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">try</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"Lock2 running"</span>);</span><br><span class="line">            <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">                <span class="keyword">synchronized</span>(DeadLock.obj2)&#123;</span><br><span class="line">                    System.out.println(<span class="string">"Lock2 lock obj2"</span>);</span><br><span class="line">                    Thread.sleep(<span class="number">3000</span>);</span><br><span class="line">                    <span class="keyword">synchronized</span>(DeadLock.obj1)&#123;</span><br><span class="line">                        System.out.println(<span class="string">"Lock2 lock obj1"</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>线程的生命周期:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">“线程的生命周期一共分为五个部分分别是：新建，就绪，运行，阻塞以及死亡。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="52-异常类面试题"><a href="#52-异常类面试题" class="headerlink" title="52.异常类面试题"></a>52.异常类面试题</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">问题:</span><br><span class="line">    <span class="number">1</span>.Exception和Error的区别</span><br><span class="line">    <span class="number">2</span>.运行时异常和一般异常的区别</span><br><span class="line">    <span class="number">3</span>.写出几种常见的运行时异常</span><br><span class="line"></span><br><span class="line">标准回答：</span><br><span class="line">    <span class="number">1.1</span>.Exception和Error的区别</span><br><span class="line">    Exception和Error都继承自Throwable,在java中只有Throwable类型的实例才可以被抛出或捕获</span><br><span class="line">    Error指正常情况下不太可能出现的情况，绝大部分的Error或导致程序崩溃，处于非正常的不可恢复的状态</span><br><span class="line">        如OutofMemoryError，StackOverflowError</span><br><span class="line">        是程序中不应该试图捕获的严重问题</span><br><span class="line">    Exception是程序正常运行中可以预料的意外情况，可以捕获并处理</span><br><span class="line"></span><br><span class="line">    <span class="number">2</span>.运行时异常和一般异常的区别</span><br><span class="line">        受检查异常（一般异常）：在编译时被强制检查的异常。程序要么向上抛出异常，要么<span class="keyword">try</span> <span class="keyword">catch</span>,exception的子类都是一般异常</span><br><span class="line">            （举例：ClassNotFoundException，IOException）</span><br><span class="line">        不受检查异常(运行时异常)：不需要强制检查的异常，RuntimeException的子类都是运行时异常。在编译时可以通过，但是在运行时会报错。</span><br><span class="line">            （举例：空指针异常，索引越界异常）</span><br><span class="line"></span><br><span class="line">    <span class="number">3</span>.写出几种常见的运行时异常</span><br><span class="line">        运行时异常RuntimeException是所有不受检查异常的基类</span><br><span class="line">        NullPointException,ClassCastException,NumberFormatException,IndexOutOfBoundsException</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     异常继承体系</span><br><span class="line">                   error --&gt;(OutofMemoryError，StackOverflowError....)</span><br><span class="line">     Throwable--&gt;</span><br><span class="line">                                RuntimeException--&gt;(NullPointException,ClassCastException,NumberFormatException,IndexOutOfBoundsException...) 这些都是运行时异常也就是不受检查异常</span><br><span class="line">                 Exception--&gt;</span><br><span class="line">                                （ClassNotFoundException，IOException）这些都是一般异常，也就是受检查异常</span><br><span class="line"></span><br><span class="line">     <span class="number">4</span>.ClassNotFoundException和NoClassDefFoundError区别</span><br><span class="line">        解答：</span><br><span class="line">        ClassNotFoundException 他是一个受检异常，是继承自Exception的。当程序运行的过程中尝试使用类加载器去加载<span class="class"><span class="keyword">class</span>文件的时候，如果没有在<span class="title">classpath</span>中查找到指定的类，就会抛出该异常</span></span><br><span class="line"><span class="class">        一般情况下，当我们使用<span class="title">Class</span>.<span class="title">forname</span>()的时候会出现这种异常，比如加载<span class="title">JDBC</span>驱动类</span></span><br><span class="line"><span class="class">        <span class="title">NoClassDefFoundError</span> 他是一个运行时的异常。当<span class="title">jvm</span>在加载一个类的时候，如果这个类在编译时是可用的，但是在运行时找不到这个类的定义的时候，就会抛出该异常</span></span><br><span class="line"><span class="class">        一般情况，在使用框架时，如果框架组件依赖了某个包，而没有导入，就会出现这个问题。或者是由于版本问题导致</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">      5.<span class="title">throw</span>和<span class="title">throws</span>的区别</span></span><br><span class="line"><span class="class">        标准回答：</span></span><br><span class="line"><span class="class">            <span class="title">throw</span>是在方法体内，手动抛出的异常，一次只能抛出一个异常对象，由方法体处理比如<span class="title">try</span> <span class="title">catch</span> 。如果方法体内不处理，则需要在方法上声明<span class="title">throws</span></span></span><br><span class="line"><span class="class">            <span class="title">throws</span>是在方法声明时，可以抛出多个异常，表名该方法可能产生的所有异常，不做任何处理直接向上层传</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">      6.你对异常有什么了解</span></span><br><span class="line"><span class="class">        尽量不要捕获类似<span class="title">Exception</span>这样的通用异常</span></span><br><span class="line"><span class="class">        不要生吞异常，即<span class="title">catch</span>后不处理</span></span><br><span class="line"><span class="class">        在实际产品中，要借助日志</span></span><br><span class="line"><span class="class">        <span class="title">try</span>-<span class="title">catch</span>会产生额外的性能开销，不要一个<span class="title">try</span>包住大段代码</span></span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tangzongsheng-coder.github.io/2020/03/22/java%E9%9D%A2%E8%AF%95%E9%A2%98/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/22/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-03-22T06:58:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/22/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo常用命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">hexo常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java面试题总结"><span class="toc-number">1.</span> <span class="toc-text">java面试题总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-简单说一下java的跨平台原理"><span class="toc-number">2.</span> <span class="toc-text">1.简单说一下java的跨平台原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JVM、JRE、JDK区别总结："><span class="toc-number">3.</span> <span class="toc-text">2.JVM、JRE、JDK区别总结：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-搭建一个java开发环境"><span class="toc-number">4.</span> <span class="toc-text">3.搭建一个java开发环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-java中的基本数据类型有几种，大小"><span class="toc-number">5.</span> <span class="toc-text">4.java中的基本数据类型有几种，大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-抽象类和接口的区别"><span class="toc-number">6.</span> <span class="toc-text">5.抽象类和接口的区别:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-面向对象的特征有哪些方面"><span class="toc-number">7.</span> <span class="toc-text">6.面向对象的特征有哪些方面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-有了基本数据类型，为什么还需要包装类型"><span class="toc-number">8.</span> <span class="toc-text">7.有了基本数据类型，为什么还需要包装类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-说一下”-”和equals方法究竟有什么区别"><span class="toc-number">9.</span> <span class="toc-text">8.说一下”&#x3D;&#x3D;”和equals方法究竟有什么区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别"><span class="toc-number">10.</span> <span class="toc-text">9.讲下String和StringBuilder的区别？StringBuffer和StringBuilder的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-讲下java中的集合"><span class="toc-number">11.</span> <span class="toc-text">10.讲下java中的集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-ArrayList和LinkedList的区别和使用场景"><span class="toc-number">12.</span> <span class="toc-text">11.ArrayList和LinkedList的区别和使用场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-讲下HashMap和HashTable的区别-CurrentHashMap？"><span class="toc-number">13.</span> <span class="toc-text">12.讲下HashMap和HashTable的区别?CurrentHashMap？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-实现一个拷贝文件的工具类使用字节流还是字符流"><span class="toc-number">14.</span> <span class="toc-text">13.实现一个拷贝文件的工具类使用字节流还是字符流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-讲一下线程的实现方式及优缺点，启动方式，怎么区分"><span class="toc-number">15.</span> <span class="toc-text">14.讲一下线程的实现方式及优缺点，启动方式，怎么区分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-有没有使用线程并发库-java中怎么创建线程池？线程池的作用？"><span class="toc-number">16.</span> <span class="toc-text">15.有没有使用线程并发库,java中怎么创建线程池？线程池的作用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-讲一下什么是设计模式-常用的设计模式有哪些"><span class="toc-number">17.</span> <span class="toc-text">16.讲一下什么是设计模式?常用的设计模式有哪些?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-讲一下http-get和post请求的区别"><span class="toc-number">18.</span> <span class="toc-text">17.讲一下http get和post请求的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-说一下你对servlet的理解？或者servlet是什么？"><span class="toc-number">19.</span> <span class="toc-text">18.说一下你对servlet的理解？或者servlet是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-简单说一下servlet的生命周期"><span class="toc-number">20.</span> <span class="toc-text">19.简单说一下servlet的生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-servlet-API中forward-和redirect-的区别"><span class="toc-number">21.</span> <span class="toc-text">20.servlet API中forward()和redirect()的区别?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#21-Jsp和servlet有哪些相同点和不同点"><span class="toc-number">22.</span> <span class="toc-text">21.Jsp和servlet有哪些相同点和不同点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22-jsp有哪些内置对象？以及四大作用域？"><span class="toc-number">23.</span> <span class="toc-text">22.jsp有哪些内置对象？以及四大作用域？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#23-说一下session和cookie的区别-使用场景？"><span class="toc-number">24.</span> <span class="toc-text">23.说一下session和cookie的区别?使用场景？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#24-MVC的各部分都有哪些技术来实现"><span class="toc-number">25.</span> <span class="toc-text">24.MVC的各部分都有哪些技术来实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#25-数据库的分类及它们的常用数据库"><span class="toc-number">26.</span> <span class="toc-text">25.数据库的分类及它们的常用数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#26-简单介绍一下关系型数据库的三大范式"><span class="toc-number">27.</span> <span class="toc-text">26.简单介绍一下关系型数据库的三大范式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#27-事务是什么？事务的四个基本特征ACID特性"><span class="toc-number">28.</span> <span class="toc-text">27.事务是什么？事务的四个基本特征ACID特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#28-mysql数据库的默认最大连接数"><span class="toc-number">29.</span> <span class="toc-text">28.mysql数据库的默认最大连接数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#29-说一下msql的分页？oracle的分页"><span class="toc-number">30.</span> <span class="toc-text">29.说一下msql的分页？oracle的分页?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#30-多线程中sleep，wait，yield，join的区别"><span class="toc-number">31.</span> <span class="toc-text">30.多线程中sleep，wait，yield，join的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#31-notify-和-notifyAll-有什么区别？"><span class="toc-number">32.</span> <span class="toc-text">31.notify()和 notifyAll()有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#32-Spring-bean的生命周期"><span class="toc-number">33.</span> <span class="toc-text">32.Spring bean的生命周期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#33-Spring-Bean的作用域"><span class="toc-number">34.</span> <span class="toc-text">33.Spring Bean的作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#34-Spring-AOP"><span class="toc-number">35.</span> <span class="toc-text">34.Spring AOP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#35-Spring中的设计模式"><span class="toc-number">36.</span> <span class="toc-text">35.Spring中的设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#36-谈谈对SpringMVC的理解"><span class="toc-number">37.</span> <span class="toc-text">36.谈谈对SpringMVC的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#37-Mybatis中的-和-的区别"><span class="toc-number">38.</span> <span class="toc-text">37.Mybatis中的$和#的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#38-Spring事务"><span class="toc-number">39.</span> <span class="toc-text">38.Spring事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#39-BeanFactory和ApplicationContext有什么区别？"><span class="toc-number">40.</span> <span class="toc-text">39.BeanFactory和ApplicationContext有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#40-Mybatis的缓存"><span class="toc-number">41.</span> <span class="toc-text">40.Mybatis的缓存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#41-下面代码创建了几个对象。输出是什么"><span class="toc-number">42.</span> <span class="toc-text">41.下面代码创建了几个对象。输出是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#42-HashMap的原理-JDK7，JDK8"><span class="toc-number">43.</span> <span class="toc-text">42.HashMap的原理(JDK7，JDK8)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#43-TCP三次握手过程分析"><span class="toc-number">44.</span> <span class="toc-text">43.TCP三次握手过程分析:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#44-NOSql-Redis优点"><span class="toc-number">45.</span> <span class="toc-text">44.NOSql,Redis优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#45-Redis协议"><span class="toc-number">46.</span> <span class="toc-text">45.Redis协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#46-Redis架构模式"><span class="toc-number">47.</span> <span class="toc-text">46.Redis架构模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#47-Redis持久化"><span class="toc-number">48.</span> <span class="toc-text">47.Redis持久化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#48-Redis的数据淘汰策略"><span class="toc-number">49.</span> <span class="toc-text">48.Redis的数据淘汰策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#49-缓存穿透，缓存雪崩，缓存击穿。"><span class="toc-number">50.</span> <span class="toc-text">49.缓存穿透，缓存雪崩，缓存击穿。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#50-三个线程循环打印ABC10次的两种种解决方法"><span class="toc-number">51.</span> <span class="toc-text">50.三个线程循环打印ABC10次的两种种解决方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#51-如何解决高并发"><span class="toc-number">52.</span> <span class="toc-text">51.如何解决高并发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#52-异常类面试题"><span class="toc-number">53.</span> <span class="toc-text">52.异常类面试题</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/22/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-03-22T02:49:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-22</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/">markdown语法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/21/hello-world/" class="archive-article-date">
-  	<time datetime="2020-03-21T12:55:57.797Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/21/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -306,8 +805,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
